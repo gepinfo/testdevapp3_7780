@@ -14,7 +14,7 @@ RUN mvn clean install -Dmaven.test.skip=true
 RUN  mv /app/target/testdevapp3-0.0.1-SNAPSHOT.jar .
 
 # Expose the port that your Spring Boot application will run on
-EXPOSE 8025
+EXPOSE 8026
 
 # Specify the default command to run when the container starts
 CMD ["java", "-jar", "testdevapp3-0.0.1-SNAPSHOT.jar"]
